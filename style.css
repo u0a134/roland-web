@@ -1,0 +1,11 @@
+:root {
+    --red: #e30613;
+    --white: #f0f0f0;
+    --black: #121212;
+}
+
+.hero {
+    background: url(assets/fondo_1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 0;
+}
