@@ -1,15 +1,3 @@
-/* =========================================================
-   ROLAND CONTRACTING LLC — Pittsburgh, PA
-   style.css
-   ---------------------------------------------------------
-   Palette : brand red + storm slate + bone
-   Type    : Archivo variable (width axis echoes the logo)
-   Device  : the "pitch line" — one roof slope at the hero
-   ========================================================= */
-
-/* ---------- 0. Type face -------------------------------
-   Archivo variable, self-hosted. Both axes are live, so the
-   width axis can be pushed wide to echo the logo lettering. */
 @font-face {
   font-family: "Archivo";
   src: url("assets/fonts/archivo-var.woff2") format("woff2");
@@ -21,31 +9,26 @@
 
 /* ---------- 1. Tokens ---------------------------------- */
 :root {
-  /* brand */
   --red:        #e30613;
   --red-700:    #b00410;
   --red-050:    #fdeef0;
 
-  /* storm slate — echoes the sky in the hero photography */
   --slate-900:  #14181d;
   --slate-800:  #1e242b;
   --slate-700:  #2b333c;
   --slate-500:  #59636f;
   --slate-300:  #aab2bb;
 
-  /* light */
   --bone:       #f4f3f0;
   --bone-200:   #e3e1dc;
   --white:      #ffffff;
   --black:      #000000;
 
-  /* semantic */
   --text:       var(--slate-900);
   --text-soft:  #5c6570;
   --line:       #d9d7d2;
   --line-dark:  rgba(255, 255, 255, .14);
 
-  /* geometry */
   --radius:     4px;
   --radius-lg:  8px;
   --container:  1220px;
@@ -53,7 +36,6 @@
   --section-y:  clamp(4rem, 8vw, 7.5rem);
   --nav-h:      76px;
 
-  /* motion */
   --ease:       cubic-bezier(.2, .7, .3, 1);
 }
 
@@ -155,8 +137,6 @@ p { text-wrap: pretty; }
 .section-head { max-width: 66ch; margin-bottom: clamp(2.25rem, 4vw, 3.5rem); }
 .section-head p { margin-top: 1rem; }
 
-/* The gable mark — taken from the chevron in the logo.
-   Used instead of a generic all-caps eyebrow label. */
 .mark {
   display: block;
   width: 34px;
@@ -166,7 +146,6 @@ p { text-wrap: pretty; }
   clip-path: polygon(0 100%, 50% 0, 100% 100%, 74% 100%, 50% 51%, 26% 100%);
 }
 
-/* Surfaces */
 .surface-dark {
   background-color: var(--slate-900);
   color: var(--white);
@@ -200,8 +179,6 @@ p { text-wrap: pretty; }
 }
 .surface-texture-dark p { color: #c8ced6; }
 
-/* Icon recolouring — the source files ship in mixed colours,
-   so they get normalised here instead of duplicating files. */
 .icon-white { filter: brightness(0) invert(1); }
 .icon-dark  { filter: brightness(0); }
 
@@ -261,7 +238,6 @@ p { text-wrap: pretty; }
   gap: .875rem;
 }
 
-/* Text link with a red rule that thickens on hover */
 .link-more {
   display: inline-block;
   font-weight: 700;
@@ -298,7 +274,6 @@ p { text-wrap: pretty; }
   box-shadow: 0 1px 0 var(--line-dark);
 }
 
-/* Inner pages open with a solid bar */
 .navbar.is-static {
   background: var(--slate-900);
   box-shadow: 0 1px 0 var(--line-dark);
@@ -313,7 +288,6 @@ p { text-wrap: pretty; }
 
 .nav-logo img { height: 34px; width: auto; }
 
-/* The wordmark already lives inside the logo image */
 .nav-logo span {
   position: absolute;
   width: 1px; height: 1px;
@@ -410,7 +384,6 @@ p { text-wrap: pretty; }
     linear-gradient(95deg, rgba(8, 10, 13, .74) 0%, rgba(8, 10, 13, .08) 62%);
 }
 
-/* h1 stays for search engines; the visual headline sits inside .hero-content */
 .hero > h1 {
   position: absolute;
   width: 1px; height: 1px;
@@ -474,7 +447,6 @@ p { text-wrap: pretty; }
 
 .hero-btns { margin-top: 2.1rem; display: flex; flex-wrap: wrap; gap: .875rem; }
 
-/* The pitch line: one roof slope where the hero meets the page */
 .hero-ridge {
   position: absolute;
   left: 0; right: 0; bottom: -1px;
@@ -483,7 +455,6 @@ p { text-wrap: pretty; }
   z-index: 2;
 }
 
-/* Entrance — the single orchestrated motion on the page */
 .hero-content > * { animation: rise .8s var(--ease) both; }
 .hero-content > *:nth-child(1) { animation-delay: .05s; }
 .hero-content > *:nth-child(2) { animation-delay: .14s; }
@@ -584,7 +555,6 @@ p { text-wrap: pretty; }
 
 .service-card-body .link-more { margin-top: auto; align-self: flex-start; }
 
-/* Sixth cell in a five-service grid: turns an awkward gap into the ask */
 .service-cta {
   display: flex;
   flex-direction: column;
@@ -686,6 +656,50 @@ p { text-wrap: pretty; }
 .work-grid figure:nth-child(1) { grid-column: span 2; grid-row: span 2; }
 .work-grid figure:nth-child(4) { grid-column: span 2; }
 .work-grid figure:nth-child(7) { grid-column: span 2; }
+
+/* ---------- 11b. Materials strip ----------------------- */
+.materials {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(2rem, 5vw, 3rem);
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(0, 30ch) 1fr;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.materials .mark { margin-bottom: .9rem; }
+.materials h3 { font-size: clamp(1.25rem, 2.2vw, 1.6rem); }
+
+.materials-note {
+  margin-top: .85rem;
+  font-size: .9375rem;
+  color: var(--text-soft);
+}
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.brand-list li {
+  padding: .9rem 1.6rem;
+  background: var(--bone);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: .9375rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--slate-700);
+  transition: border-color .18s var(--ease), color .18s var(--ease);
+}
+
+.brand-list li:hover {
+  border-color: var(--red);
+  color: var(--slate-900);
+}
 
 /* ---------- 12. About ---------------------------------- */
 .about-grid {
@@ -866,7 +880,6 @@ p { text-wrap: pretty; }
 .license-tag { color: var(--white); font-weight: 700; }
 .license-tag span { color: var(--red); }
 
-/* ---------- 15. Inner page header ---------------------- */
 .page-hero {
   position: relative;
   isolation: isolate;
@@ -908,7 +921,6 @@ p { text-wrap: pretty; }
 .crumbs li { display: flex; gap: .5rem; }
 .crumbs li + li::before { content: "/"; color: var(--red); }
 
-/* ---------- 16. Service detail content ----------------- */
 .detail-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(0, .95fr);
@@ -921,7 +933,6 @@ p { text-wrap: pretty; }
 .prose h3 { margin-top: 2.75rem; }
 .prose > h3:first-child { margin-top: 0; }
 
-/* Checklist — what a job includes */
 .checklist { display: grid; gap: .8rem; margin-top: 1.35rem; }
 .checklist li {
   position: relative;
@@ -938,7 +949,6 @@ p { text-wrap: pretty; }
 }
 .checklist strong { font-variation-settings: "wdth" 106; }
 
-/* Process — genuinely a sequence, so it is numbered */
 .process { counter-reset: step; margin-top: 1.5rem; }
 .process li {
   counter-increment: step;
@@ -1002,7 +1012,6 @@ p { text-wrap: pretty; }
 .side-nav a[aria-current="page"] { color: var(--red); }
 .side-nav a:last-child { border-bottom: 0; }
 
-/* Detail gallery */
 .detail-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -1016,7 +1025,6 @@ p { text-wrap: pretty; }
   border-radius: var(--radius);
 }
 
-/* FAQ */
 .faq { margin-top: 1.5rem; }
 .faq details {
   border-top: 1px solid var(--line);
@@ -1045,7 +1053,6 @@ p { text-wrap: pretty; }
 .faq details[open] summary::after { transform: rotate(135deg); }
 .faq details p { margin-top: .85rem; font-size: .975rem; color: var(--text-soft); max-width: 68ch; }
 
-/* Final CTA on inner pages */
 .cta-strip {
   background: var(--slate-900);
   color: var(--white);
@@ -1060,7 +1067,6 @@ p { text-wrap: pretty; }
 }
 .cta-strip p { color: #c1c9d2; margin-top: .75rem; max-width: 52ch; }
 
-/* Stats row on the services index */
 .stats-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1082,7 +1088,6 @@ p { text-wrap: pretty; }
 }
 .stat p { font-size: .95rem; color: var(--text-soft); }
 
-/* Floating WhatsApp shortcut */
 .wa-float {
   position: fixed;
   right: clamp(1rem, 3vw, 1.75rem);
@@ -1099,9 +1104,6 @@ p { text-wrap: pretty; }
 .wa-float img { width: 28px; height: 28px; }
 .wa-float:hover { transform: scale(1.07); }
 
-/* =========================================================
-   17. Responsive
-   ========================================================= */
 @media (max-width: 1080px) {
   .franja-inner { grid-template-columns: 1fr; }
   .experience-box { justify-self: start; }
@@ -1116,6 +1118,7 @@ p { text-wrap: pretty; }
 
 @media (max-width: 900px) {
   :root { --nav-h: 64px; }
+  .materials {grid-template-columns: 1fr;}
 
   .nav-toggle { display: flex; }
 
@@ -1189,9 +1192,6 @@ p { text-wrap: pretty; }
   .hours dd { margin-bottom: .6rem; }
 }
 
-/* =========================================================
-   18. Accessibility & print
-   ========================================================= */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *,

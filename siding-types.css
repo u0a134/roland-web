@@ -1,0 +1,9 @@
+.siding-grid .service-card-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 900px) {
+    .siding-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
