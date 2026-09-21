@@ -7,7 +7,6 @@
   font-display: swap;
 }
 
-/* ---------- 1. Tokens ---------------------------------- */
 :root {
   --red:        #e30613;
   --red-700:    #b00410;
@@ -39,7 +38,6 @@
   --ease:       cubic-bezier(.2, .7, .3, 1);
 }
 
-/* ---------- 2. Reset ----------------------------------- */
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -93,7 +91,6 @@ button {
   color: var(--white);
 }
 
-/* ---------- 3. Typography ------------------------------ */
 h1, h2, h3, h4 {
   font-family: "Archivo", "Arial Black", sans-serif;
   font-variation-settings: "wdth" 118;
@@ -124,7 +121,6 @@ p { text-wrap: pretty; }
   max-width: 62ch;
 }
 
-/* ---------- 4. Layout utilities ------------------------ */
 .container {
   width: 100%;
   max-width: var(--container);
@@ -182,7 +178,6 @@ p { text-wrap: pretty; }
 .icon-white { filter: brightness(0) invert(1); }
 .icon-dark  { filter: brightness(0); }
 
-/* ---------- 5. Buttons --------------------------------- */
 .btn {
   --btn-bg: var(--red);
   --btn-fg: var(--white);
@@ -252,7 +247,6 @@ p { text-wrap: pretty; }
   box-shadow: inset 0 -8px 0 var(--red-050);
 }
 
-/* ---------- 6. Navbar ---------------------------------- */
 .navbar {
   position: fixed;
   inset: 0 0 auto 0;
@@ -353,7 +347,6 @@ p { text-wrap: pretty; }
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
 
-/* ---------- 7. Hero ------------------------------------ */
 .hero {
   position: relative;
   isolation: isolate;
@@ -467,7 +460,6 @@ p { text-wrap: pretty; }
   to   { opacity: 1; transform: none; }
 }
 
-/* ---------- 8. Trust strip ----------------------------- */
 .trust {
   background: var(--red);
   color: var(--white);
@@ -498,7 +490,6 @@ p { text-wrap: pretty; }
   color: rgba(255, 255, 255, .88);
 }
 
-/* ---------- 9. Services grid --------------------------- */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
@@ -573,7 +564,6 @@ p { text-wrap: pretty; }
 .service-cta p { color: #c1c9d2; font-size: .975rem; }
 .service-cta .btn { align-self: flex-start; }
 
-/* ---------- 10. CTA band ------------------------------- */
 .franja {
   position: relative;
   isolation: isolate;
@@ -632,7 +622,6 @@ p { text-wrap: pretty; }
   max-width: 8ch;
 }
 
-/* ---------- 11. Work gallery --------------------------- */
 .work-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -657,7 +646,6 @@ p { text-wrap: pretty; }
 .work-grid figure:nth-child(4) { grid-column: span 2; }
 .work-grid figure:nth-child(7) { grid-column: span 2; }
 
-/* ---------- 11b. Materials strip ----------------------- */
 .materials {
   margin-top: clamp(2.5rem, 5vw, 4rem);
   padding-top: clamp(2rem, 5vw, 3rem);
@@ -701,7 +689,6 @@ p { text-wrap: pretty; }
   color: var(--slate-900);
 }
 
-/* ---------- 12. About ---------------------------------- */
 .about-grid {
   display: grid;
   grid-template-columns: 1.1fr .9fr;
@@ -761,7 +748,6 @@ p { text-wrap: pretty; }
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
 }
 
-/* ---------- 13. Contact -------------------------------- */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -825,7 +811,6 @@ p { text-wrap: pretty; }
 .hours dt { font-weight: 600; }
 .hours dd { margin: 0; color: var(--text-soft); text-align: right; }
 
-/* ---------- 14. Footer --------------------------------- */
 .footer {
   background: var(--black);
   color: #9aa2ac;
@@ -1088,8 +1073,6 @@ p { text-wrap: pretty; }
 }
 .stat p { font-size: .95rem; color: var(--text-soft); }
 
-
-/* ---------- Home: service tags ------------------------- */
 .card-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1106,7 +1089,6 @@ p { text-wrap: pretty; }
   border-radius: 999px;
 }
 
-/* ---------- Home: storm damage ------------------------- */
 .storm {
   position: relative;
   isolation: isolate;
@@ -1161,7 +1143,6 @@ p { text-wrap: pretty; }
 }
 .storm-media img { width: 100%; height: 100%; object-fit: cover; }
 
-/* ---------- Home: four-step process -------------------- */
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1188,7 +1169,6 @@ p { text-wrap: pretty; }
 .steps h3 { margin-bottom: .55rem; }
 .steps p { font-size: .975rem; color: var(--text-soft); }
 
-/* ---------- Home: warning signs ------------------------ */
 .signs-layout {
   display: grid;
   grid-template-columns: .85fr 1.15fr;
@@ -1208,7 +1188,6 @@ p { text-wrap: pretty; }
 .signs-grid h3 { font-size: 1.1rem; margin-bottom: .45rem; }
 .signs-grid p { font-size: .95rem; color: var(--text-soft); }
 
-/* ---------- Home: video walk-through ------------------- */
 .walkthrough {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
@@ -1229,7 +1208,6 @@ p { text-wrap: pretty; }
 }
 .walkthrough-video video { width: 100%; height: 100%; object-fit: cover; }
 
-/* ---------- Home: service area ------------------------- */
 .section--tight { padding-block: clamp(3.5rem, 6vw, 5rem); }
 .area-layout {
   display: grid;
@@ -1252,7 +1230,6 @@ p { text-wrap: pretty; }
 }
 .area-list li:first-child { background: var(--slate-900); color: var(--white); border-color: var(--slate-900); }
 
-/* ---------- Home: FAQ ---------------------------------- */
 .faq-layout {
   display: grid;
   grid-template-columns: .8fr 1.2fr;
@@ -1261,7 +1238,6 @@ p { text-wrap: pretty; }
 }
 .faq-layout .faq { margin-top: 0; }
 
-/* ---------- Service pages: sub-services ---------------- */
 .subservices {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
