@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roland Contracting LLC — Roofing in Pittsburgh, PA</title>
-    <meta name="description" content="Roofing, siding, gutters and flat-roof work in Pittsburgh, PA. Licensed and insured, PA 6855562. Free estimates — call or text 412 286 6071.">
+    <title>Roland Contracting LLC — Roofing, Siding &amp; Gutters in Pittsburgh, PA</title>
+    <meta name="description" content="Roof inspection, repair and replacement, storm damage, siding, gutters and flat roofs in Pittsburgh and Allegheny County, PA. Licensed and insured, PA 6855562. Free written estimates — call or text 412 286 6071.">
 
     <link rel="icon" href="assets/logo-roland.png">
     <link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RoofingContractor",
+        "name": "Roland Contracting LLC",
+        "telephone": "+1-412-286-6071",
+        "email": "rolandcontractingllc1@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pittsburgh",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+        },
+        "areaServed": "Pittsburgh and Allegheny County, PA",
+        "openingHours": ["Mo-Fr 07:00-18:00", "Sa 08:00-14:00"],
+        "image": "assets/camioneta.jpeg",
+        "logo": "assets/logo-roland.png"
+    }
+    </script>
 </head>
 <body>
     <header class="navbar" id="navbar">
@@ -21,6 +41,7 @@
             <a href="services.html">Services</a>
             <a href="#our-work">Our Work</a>
             <a href="#about-us">About Us</a>
+            <a href="#faq">FAQ</a>
             <a href="#contact-us">Contact</a>
             <a class="btn btn-primary nav-cta" href="tel:+14122866071">Call 412 286 6071</a>
         </nav>
@@ -31,24 +52,30 @@
     </header>
 
     <main>
+        <!-- ============ HERO ============ -->
         <section class="hero" id="inicio">
-            <h1>Roland Contracting LLC — Roofing in Pittsburgh, PA</h1>
+            <h1>Roland Contracting LLC — Roofing, siding and gutters in Pittsburgh, PA</h1>
 
             <div class="container">
                 <div class="hero-content">
+                    <p class="hero-badge">
+                        <img src="assets/iconos/certificado.png" alt="" aria-hidden="true" class="icon-white">
+                        Free inspections and written estimates in Allegheny County
+                    </p>
 
                     <p class="hero-title">Roofs built for Pittsburgh weather.</p>
 
                     <p class="hero-sub">
-                        Freeze, thaw, wind, and another foot of snow. We replace, repair and
-                        maintain roofs across Allegheny County so the next storm stays outside.
+                        Freeze, thaw, wind, hail and another foot of snow. We inspect, repair and
+                        replace roofs, siding and gutters so your home stays dry and protected,
+                        whatever the next storm brings.
                     </p>
 
                     <div class="hero-btns">
                         <a class="btn btn-primary" href="https://wa.me/14122866071" target="_blank" rel="noopener">
-                            <img src="assets/iconos/whatsapp.svg" alt="" aria-hidden="true" class="icon-white"> Get a free estimate
+                            <img src="assets/iconos/whatsapp.svg" alt="" aria-hidden="true" class="icon-white"> Book a free inspection
                         </a>
-                        <a class="btn btn-ghost" href="services.html">See what we do</a>
+                        <a class="btn btn-ghost" href="services.html">See our services</a>
                     </div>
                 </div>
             </div>
@@ -58,6 +85,7 @@
             </svg>
         </section>
 
+        <!-- ============ TRUST ============ -->
         <section class="trust">
             <div class="container">
                 <ul class="trust-list">
@@ -65,14 +93,14 @@
                         <img src="assets/iconos/certificado.png" alt="" aria-hidden="true" class="icon-white">
                         <div>
                             <h3>Licensed and insured</h3>
-                            <p>Liability coverage on every job.</p>
+                            <p>PA 6855562, with liability coverage on every job we take.</p>
                         </div>
                     </li>
                     <li class="trust-item">
                         <img src="assets/iconos/calidad.png" alt="" aria-hidden="true" class="icon-white">
                         <div>
                             <h3>Warrantied materials</h3>
-                            <p>Manufacturer-grade shingles, underlayment and flashing. No shortcuts.</p>
+                            <p>GAF, Owens Corning and ATLAS products installed to the manufacturer's spec.</p>
                         </div>
                     </li>
                     <li class="trust-item">
@@ -86,25 +114,30 @@
             </div>
         </section>
 
+        <!-- ============ SERVICES ============ -->
         <section class="services section surface-texture-light" id="services">
             <div class="container">
                 <div class="section-head">
                     <span class="mark" aria-hidden="true"></span>
-                    <h2>Five things we do, and we do them properly</h2>
+                    <h2>Complete protection for the outside of your home</h2>
                     <p class="lead">
-                        Residential and commercial work across Pittsburgh and the surrounding
-                        boroughs. Pick a service to see how the job actually runs.
+                        Roofing, siding and gutters for houses, row homes and small commercial
+                        buildings across Pittsburgh. One contractor, one crew, and one number to
+                        call for the whole exterior.
                     </p>
                 </div>
 
                 <div class="services-grid">
                     <article class="service-card">
                         <div class="service-card-media">
-                            <img src="assets/trabajos/roofing/roofing_diseño.png" alt="Newly installed asphalt shingle roof" loading="lazy">
+                            <img src="assets/trabajos/roofing/roofing_diseno.png" alt="Newly installed asphalt shingle roof" loading="lazy">
                         </div>
                         <div class="service-card-body">
                             <h3>Roofing</h3>
-                            <p>Full shingle replacement, storm and leak repair, ridge vents and flashing for homes and commercial buildings.</p>
+                            <p>Inspections, leak and storm repairs, and full tear-off replacements with new flashing and ventilation.</p>
+                            <ul class="card-tags" aria-label="Roofing services">
+                                <li>Inspection</li><li>Repair</li><li>Replacement</li><li>Storm damage</li>
+                            </ul>
                             <a class="link-more" href="service-roofing.html">How we do roofing</a>
                         </div>
                     </article>
@@ -115,18 +148,24 @@
                         </div>
                         <div class="service-card-body">
                             <h3>Siding</h3>
-                            <p>New siding, panel replacement and trim work that seals the wall and lifts how the whole house reads from the street.</p>
+                            <p>New siding, panel repairs and full replacements that seal the walls and refresh how the house looks from the street.</p>
+                            <ul class="card-tags" aria-label="Siding services">
+                                <li>Vinyl</li><li>Cedar shake</li><li>Fiber cement</li><li>Soffit &amp; fascia</li>
+                            </ul>
                             <a class="link-more" href="service-siding.html">How we do siding</a>
                         </div>
                     </article>
 
                     <article class="service-card">
                         <div class="service-card-media">
-                            <img src="assets/trabajos/gutters/gutters_diseño.png" alt="Aluminium gutter being installed along a roof edge" loading="lazy">
+                            <img src="assets/trabajos/gutters/gutters_diseno.png" alt="Aluminium gutter being installed along a roof edge" loading="lazy">
                         </div>
                         <div class="service-card-body">
                             <h3>Gutters</h3>
-                            <p>Seamless gutters, downspouts and guards sized to your roof so meltwater ends up away from the foundation.</p>
+                            <p>Seamless gutters, downspouts and guards sized to your roof, so rain and meltwater end up away from the foundation.</p>
+                            <ul class="card-tags" aria-label="Gutter services">
+                                <li>Installation</li><li>Replacement</li><li>Repair</li><li>Guards</li>
+                            </ul>
                             <a class="link-more" href="service-gutters.html">How we do gutters</a>
                         </div>
                     </article>
@@ -136,9 +175,12 @@
                             <img src="assets/trabajos/roll_roof/roll_roof_gemini.jpeg" alt="Rolled membrane being torched onto a flat roof" loading="lazy">
                         </div>
                         <div class="service-card-body">
-                            <h3>Roll roofing</h3>
-                            <p>Torch-down and rolled membrane for the flat and low-slope roofs that cover half of Pittsburgh's row houses and garages.</p>
-                            <a class="link-more" href="service-roll-roof.html">How we do roll roofing</a>
+                            <h3>Flat &amp; roll roofing</h3>
+                            <p>Torch-down and rolled membrane for the flat and low-slope roofs on porches, garages and row-house backs.</p>
+                            <ul class="card-tags" aria-label="Flat roofing services">
+                                <li>Torch-down</li><li>Roll roofing</li><li>Coatings</li>
+                            </ul>
+                            <a class="link-more" href="service-roll-roof.html">How we do flat roofs</a>
                         </div>
                     </article>
 
@@ -148,14 +190,17 @@
                         </div>
                         <div class="service-card-body">
                             <h3>Gutter cleaning</h3>
-                            <p>Spring and fall clear-outs, flush tests and downspout checks. The cheapest way to avoid an ice dam in January.</p>
+                            <p>Spring and fall clear-outs, downspout flushing and a condition check. The cheapest way to avoid an ice dam in January.</p>
+                            <ul class="card-tags" aria-label="Gutter cleaning services">
+                                <li>Clear-out</li><li>Flush test</li><li>Seasonal</li>
+                            </ul>
                             <a class="link-more" href="service-gutter-cleaning.html">How we do cleaning</a>
                         </div>
                     </article>
 
                     <div class="service-cta">
                         <h3>Something else?</h3>
-                        <p>Chimney flashing, skylights, storm damage, a leak you can't place. Ask and we'll tell you if it's ours.</p>
+                        <p>Chimney flashing, skylights, a leak you can't trace. Tell us what you're seeing and we'll tell you honestly if it's a job for us.</p>
                         <a class="btn btn-primary" href="https://wa.me/14122866071" target="_blank" rel="noopener">
                             <img src="assets/iconos/whatsapp.svg" alt="" aria-hidden="true" class="icon-white"> Ask us
                         </a>
@@ -163,37 +208,126 @@
                 </div>
             </div>
         </section>
-        <section class="franja">
-            <div class="container franja-inner">
-                <div class="franja-box-text">
+
+        <!-- ============ STORM DAMAGE ============ -->
+        <section class="storm" id="storm-damage">
+            <div class="container storm-inner">
+                <div class="storm-copy">
                     <span class="mark" aria-hidden="true"></span>
-                    <h2>Tell us what's wrong. We'll come look at it.</h2>
+                    <h2>Storm damage? Call us before the next rain.</h2>
                     <p>
-                        Estimates are free and written down: what needs doing, what it costs,
-                        and how long we'll be on site. Send a photo on WhatsApp and we can
-                        usually tell you the same day whether it's a repair or a replacement.
+                        High wind, hail and fallen branches can lift shingles, crack flashing and
+                        open the roof to water in places you can't see from the ground. The sooner
+                        it's looked at, the smaller the repair.
                     </p>
+                    <ul class="storm-list">
+                        <li><strong>Fast assessment.</strong> Send photos and we'll tell you how urgent it looks, usually the same day.</li>
+                        <li><strong>Insurance-ready documentation.</strong> Photos and measurements of the damage you can hand straight to your adjuster.</li>
+                        <li><strong>We meet the adjuster.</strong> On site, if it helps your claim go smoother.</li>
+                        <li><strong>Repair or replace.</strong> Whatever the roof actually needs, explained in writing.</li>
+                    </ul>
                     <div class="btn-row">
-                        <a class="btn btn-primary" href="https://wa.me/14122866071" target="_blank" rel="noopener">
-                            <img src="assets/iconos/whatsapp.svg" alt="" aria-hidden="true" class="icon-white"> Message us on WhatsApp
+                        <a class="btn btn-primary" href="tel:+14122866071">
+                            <img src="assets/iconos/phone.svg" alt="" aria-hidden="true" class="icon-white"> Call 412 286 6071
+                        </a>
+                        <a class="btn btn-ghost" href="https://wa.me/14122866071" target="_blank" rel="noopener">
+                            <img src="assets/iconos/whatsapp.svg" alt="" aria-hidden="true" class="icon-white"> Send photos
                         </a>
                     </div>
+                    <p class="storm-note">Emergencies are answered on Sundays too.</p>
                 </div>
-
-                <div class="experience-box">
-                    <span class="experience-big">10</span>
-                    <span class="experience-small">years on Pittsburgh roofs</span>
-                </div>
+                <figure class="storm-media">
+                    <img src="assets/trabajos/roofing/roof5.jpeg" alt="Roof deck dried in with synthetic underlayment during repairs" loading="lazy">
+                </figure>
             </div>
         </section>
+
+        <!-- ============ PROCESS ============ -->
+        <section class="section" id="how-it-works">
+            <div class="container">
+                <div class="section-head">
+                    <span class="mark" aria-hidden="true"></span>
+                    <h2>From first call to clean yard in four steps</h2>
+                    <p class="lead">
+                        No pressure, no surprise charges. You know what's being done, what it
+                        costs and how long we'll be there before any work starts.
+                    </p>
+                </div>
+
+                <ol class="steps">
+                    <li>
+                        <h3>Tell us what's wrong</h3>
+                        <p>Call, text or send a photo on WhatsApp. Many times we can tell right away if it's a repair or a replacement.</p>
+                    </li>
+                    <li>
+                        <h3>Free inspection</h3>
+                        <p>We get on the roof where it's safe, check the attic from underneath and photograph everything we find.</p>
+                    </li>
+                    <li>
+                        <h3>Written estimate</h3>
+                        <p>Scope, materials, price and days on site, usually within a day of the visit. The price doesn't move once we start.</p>
+                    </li>
+                    <li>
+                        <h3>Work and clean-up</h3>
+                        <p>Landscaping protected, the job done properly, and a magnetic sweep of every nail before we leave.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ WARNING SIGNS ============ -->
+        <section class="section surface-bone" id="warning-signs">
+            <div class="container signs-layout">
+                <div class="signs-head">
+                    <span class="mark" aria-hidden="true"></span>
+                    <h2>Signs your home needs a closer look</h2>
+                    <p class="lead">
+                        Most roof and siding problems start small and quiet. If you notice any of
+                        these, a free inspection now costs a lot less than a rotten deck later.
+                    </p>
+                    <a class="btn btn-primary" href="https://wa.me/14122866071" target="_blank" rel="noopener">
+                        <img src="assets/iconos/whatsapp.svg" alt="" aria-hidden="true" class="icon-white"> Book a free inspection
+                    </a>
+                </div>
+
+                <ul class="signs-grid">
+                    <li>
+                        <h3>Missing or curling shingles</h3>
+                        <p>Wind and age lift the edges, and every gap is a path for water.</p>
+                    </li>
+                    <li>
+                        <h3>Stains on ceilings or walls</h3>
+                        <p>By the time it shows inside, water has usually been getting in for a while.</p>
+                    </li>
+                    <li>
+                        <h3>Granules in the gutters</h3>
+                        <p>Shingles shedding their grit are near the end of their life.</p>
+                    </li>
+                    <li>
+                        <h3>Overflowing gutters</h3>
+                        <p>Clogged or undersized gutters soak the fascia and feed ice dams in winter.</p>
+                    </li>
+                    <li>
+                        <h3>Sagging or soft spots</h3>
+                        <p>A dip in the roof line often means the deck underneath is rotting.</p>
+                    </li>
+                    <li>
+                        <h3>Cracked or loose siding</h3>
+                        <p>Water gets behind the wall and works quietly for months before you see it.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ OUR WORK ============ -->
         <section class="section" id="our-work">
             <div class="container">
                 <div class="section-head">
                     <span class="mark" aria-hidden="true"></span>
                     <h2>Recent jobs</h2>
                     <p class="lead">
-                        Tear-offs, gutter runs, cedar shake and flat-roof coatings, photographed
-                        on the day the crew finished.
+                        Tear-offs, gutter runs, cedar shake and flat-roof work, photographed on
+                        the day the crew finished.
                     </p>
                 </div>
 
@@ -206,14 +340,31 @@
                     <figure><img src="assets/trabajos/siding/siding1.jpeg" alt="Cedar shakes fitted under an eave" loading="lazy"></figure>
                     <figure><img src="assets/trabajos/roofing/roof3.jpeg" alt="Shingle roof seen across a Pittsburgh neighbourhood" loading="lazy"></figure>
                 </div>
+
+                <div class="walkthrough">
+                    <div class="walkthrough-copy">
+                        <span class="mark" aria-hidden="true"></span>
+                        <h3>Walk a finished roof with us</h3>
+                        <p>
+                            Straight lines, sealed pipe boots, clean valleys and ridge caps that sit
+                            flat. This is what a finished Roland roof looks like up close, before
+                            we pack up and sweep the yard.
+                        </p>
+                    </div>
+                    <div class="walkthrough-video">
+                        <video src="assets/videos/video1.mp4" poster="assets/videos/video1-poster.jpg" controls muted playsinline preload="none"
+                               aria-label="Video walk-through of a finished shingle roof"></video>
+                    </div>
+                </div>
+
                 <div class="materials">
                     <div class="materials-copy">
                         <span class="mark" aria-hidden="true"></span>
                         <h3>We use materials that last</h3>
                         <p class="materials-note">
                             Shingles, underlayment and accessories from manufacturers that back
-                            their product with a real warranty.
-                        </p> 
+                            their products with a real warranty, installed the way they specify.
+                        </p>
                     </div>
                     <ul class="brand-list">
                         <li>GAF</li>
@@ -223,22 +374,26 @@
                 </div>
             </div>
         </section>
+
+        <!-- ============ ABOUT ============ -->
         <section class="section surface-texture-dark" id="about-us">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-copy">
                         <span class="mark" aria-hidden="true"></span>
-                        <h2>About us</h2>
+                        <h2>Your local partner for roofing and exteriors</h2>
                         <p>
-                            Roland Contracting LLC is a roofing company based in Pittsburgh, PA.
-                            We work on houses, row homes and small commercial buildings across the
-                            city and the surrounding boroughs, and we've spent long enough on local
-                            roofs to know what the winter here does to flashing, valleys and gutters.
+                            Roland Contracting LLC is a Pittsburgh roofing and exterior contractor.
+                            For ten years we've worked on houses, row homes and small commercial
+                            buildings across the city and the surrounding boroughs, and we know
+                            exactly what a Western Pennsylvania winter does to flashing, valleys
+                            and gutters.
                         </p>
                         <p>
-                            Our vision is to be a trusted leader in roofing and contracting, recognized for excellence,
-                            integrity and commitment to our customers. At Roland Contracting LLC, we strive to deliver durable
-                            solutions and build lasting relationships with our clients that exceed expectations on every project.
+                            We keep things simple: free inspections, honest advice, a written price
+                            that doesn't change, and a crew that treats your property like its own.
+                            Whether you need a small repair or a complete new roof, you get the same
+                            care and the same straight answers.
                         </p>
                         <div class="btn-row" style="margin-top: 1.75rem;">
                             <a class="btn btn-primary" href="services.html">See our services</a>
@@ -260,38 +415,130 @@
                             <li>Materials and fasteners rated for the pitch and the climate</li>
                             <li>A site left cleaner than we found it, nails included</li>
                         </ul>
-                        <p>
-                            Quality materials, professional workmanship and results that hold up
-                            long after the invoice is paid.
-                        </p>
                     </div>
 
                     <div class="vision">
                         <h3>Where we're going</h3>
                         <p>
                             We want to be the contractor Pittsburgh homeowners call first and
-                            recommend without being asked, known for doing what we said we'd do
+                            recommend without being asked, known for doing what we said we'd do,
                             at the price we quoted.
                         </p>
                         <p>
-                            Durable solutions, straight answers, and relationships that outlast
-                            any single project.
+                            Durable work, straight answers, and relationships that outlast any
+                            single project.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section surface-bone" id="contact-us">
+
+        <!-- ============ TESTIMONIALS (ready to enable) ============
+             When Roland has real Google reviews, replace the text below with
+             the customer's own words and name, then remove the comment markers.
+             Never publish invented reviews.
+
+        <section class="section" id="reviews">
             <div class="container">
                 <div class="section-head">
                     <span class="mark" aria-hidden="true"></span>
-                    <h2>Get in touch</h2>
+                    <h2>What our customers say</h2>
+                </div>
+                <ul class="reviews-grid">
+                    <li class="review">
+                        <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                        <blockquote>Customer's review, copied exactly from Google.</blockquote>
+                        <p class="review-name">Customer name, neighbourhood</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        ============================================================ -->
+
+        <!-- ============ SERVICE AREA ============ -->
+        <section class="section section--tight" id="service-area">
+            <div class="container area-layout">
+                <div>
+                    <span class="mark" aria-hidden="true"></span>
+                    <h2>Where we work</h2>
                     <p class="lead">
-                        Call, text or send photos. We answer through the working day and get back
-                        to evening messages the next morning.
+                        Based in Pittsburgh, serving homes and businesses throughout Allegheny
+                        County. Don't see your neighbourhood? Ask us — if we can get there, we will.
+                    </p>
+                </div>
+                <ul class="area-list">
+                    <li>Pittsburgh</li>
+                    <li>Penn Hills</li>
+                    <li>Monroeville</li>
+                    <li>Plum</li>
+                    <li>Wilkinsburg</li>
+                    <li>Churchill</li>
+                    <li>Forest Hills</li>
+                    <li>Verona</li>
+                    <li>Oakmont</li>
+                    <li>Fox Chapel</li>
+                    <li>O'Hara</li>
+                    <li>Shaler</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ FAQ ============ -->
+        <section class="section surface-bone" id="faq">
+            <div class="container faq-layout">
+                <div class="section-head">
+                    <span class="mark" aria-hidden="true"></span>
+                    <h2>Common questions</h2>
+                    <p class="lead">
+                        The things homeowners ask us most. If yours isn't here, send it on
+                        WhatsApp and we'll answer the same day.
                     </p>
                 </div>
 
+                <div class="faq">
+                    <details>
+                        <summary>Is the inspection really free?</summary>
+                        <p>Yes. We come out, look at the roof, siding or gutters, and give you a written estimate at no cost and with no obligation to book the work.</p>
+                    </details>
+                    <details>
+                        <summary>How quickly can you give me a price?</summary>
+                        <p>Usually within a day of seeing the job. For smaller repairs, a couple of clear photos on WhatsApp is often enough for us to give you a good idea straight away.</p>
+                    </details>
+                    <details>
+                        <summary>Do I need a repair or a full replacement?</summary>
+                        <p>It depends on the age of the roof, how many layers it has and where it's failing. Isolated wind damage or one bad flashing is a repair. If your roof still has good years left, we'll tell you so.</p>
+                    </details>
+                    <details>
+                        <summary>Do you help with insurance claims?</summary>
+                        <p>Yes. After storm damage we document the roof with photos and measurements you can give your adjuster, and we'll meet them on site if that helps.</p>
+                    </details>
+                    <details>
+                        <summary>Are you licensed and insured?</summary>
+                        <p>Yes. Roland Contracting LLC is registered in Pennsylvania under PA 6855562 and carries liability insurance on every job.</p>
+                    </details>
+                    <details>
+                        <summary>How long does a new roof take?</summary>
+                        <p>Most single-family homes take one to three days, depending on size, pitch and how many layers are coming off. You'll have the number before we start.</p>
+                    </details>
+                    <details>
+                        <summary>Do you work on commercial buildings?</summary>
+                        <p>Yes, small commercial buildings as well as houses and row homes, including the flat and low-slope roofs common on them.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="section" id="contact-us">
+            <div class="container">
+                <div class="section-head">
+                    <span class="mark" aria-hidden="true"></span>
+                    <h2>Get your free estimate</h2>
+                    <p class="lead">
+                        Call, text or send photos. We answer through the working day and reply to
+                        evening messages first thing the next morning.
+                    </p>
+                </div>
                 <div class="contact-grid">
                     <div>
                         <div class="contact-list">
@@ -374,7 +621,7 @@
                         <li><a href="service-roofing.html">Roofing</a></li>
                         <li><a href="service-siding.html">Siding</a></li>
                         <li><a href="service-gutters.html">Gutters</a></li>
-                        <li><a href="service-roll-roof.html">Roll roofing</a></li>
+                        <li><a href="service-roll-roof.html">Flat &amp; roll roofing</a></li>
                         <li><a href="service-gutter-cleaning.html">Gutter cleaning</a></li>
                     </ul>
                 </div>
